@@ -1,0 +1,42 @@
+service: product-stock
+
+plugins:
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: dev
+  region: ap-southeast-1
+  memorySize: 512
+
+functions:
+  stockFunc:
+    handler: app.handler
+    events:
+        - http:
+            path: users/register
+            method: post
+        - http:
+            path: users/login
+            method: post
+        - http:
+            path: products/productList
+            method: get
+        - http:
+            path: products/productList/stockList
+            method: get
+        - http:
+            path: products
+            method: post
+        - http:
+            path: products{productId}
+            method: get
+        - http:
+            path: products{productId}
+            method: put
+        - http:
+            path: products{productId}
+            method: delete
+
+
