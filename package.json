@@ -11,7 +11,8 @@
     "API",
     "JWT",
     "CRUD",
-    "AUTH"
+    "AUTH",
+    "Serverless"
   ],
   "author": "Md Rijwan Razzaq Matin",
   "license": "ISC",
