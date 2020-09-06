@@ -1,4 +1,4 @@
-# ProductStock-Api
+# Product Stock Api
 A sample app that implements product inventory management that requires adding products to a product catalog and adding warehouses to store the products.
 
 **Tasks**
